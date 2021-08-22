@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="assets/sounds/EOTG - Techno - 320bit.mp3" type="audio/mp3" />
+    </audio>
+    <section id="intro">
+        <article>
+            <p>can you ... </p>
+            <h1>Guess The Number?</h1>
+            <input type="button" value="let's go" id="button" onclick="letsGo()">
+        </article>
+    </section>
+    <section id="form">
+        <form action="" onsubmit="return false">
+            <fieldset>
+            <h3>in how many rounds you think you can guess the number?</h3>
+            <input type="radio" name="radio" id="radio4" onclick="InputNum()">
+            <label for="radio1">4</label>
+            <input type="radio" name="radio" id="radio5" onclick="InputNum()">
+            <label for="">5</label>
+            <input type="radio" name="radio" id="radio6" onclick="InputNum()">
+            <label for="">6</label>
+            <input type="radio" name="radio" id="radioCustom" onclick="InputNum()">
+            <label for="">custom</label>
+            <input type="text" name="number" id="customNumber">
+        </fieldset>
+        </form>
+        <form action="" onsubmit="return false">
+            <input type="text" name="" id="guess">
+            <input type="button" value="guess" id="guessButton" onclick="guessMe()">
+        </form>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
